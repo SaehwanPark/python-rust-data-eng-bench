@@ -1,0 +1,1 @@
+{"engine":"python-csv-loop","task":"sessionize","rows":5000000,"output_rows":4830167,"repeat":3,"seconds":[5.059350984000048,5.147404434999771,5.149866890999874],"best_seconds":5.059350984000048,"checksum":191069529.7466736}

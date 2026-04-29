@@ -1,0 +1,1 @@
+{"engine":"python-csv-loop","task":"streaming-score","rows":5000000,"chunks":50,"output_rows":54,"repeat":3,"seconds":[7.08971563599971,7.146965380000438,6.969949279000502],"best_seconds":6.969949279000502,"checksum":1959.9407584807698}

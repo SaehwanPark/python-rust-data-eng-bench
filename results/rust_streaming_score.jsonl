@@ -1,0 +1,1 @@
+{"best_seconds":0.516074293,"checksum":1959.9407584807698,"chunks":50,"engine":"rust-native","n":null,"output_rows":54,"repeat":3,"rows":5000000,"seconds":[0.521149919,0.521863981,0.516074293],"task":"streaming-score"}

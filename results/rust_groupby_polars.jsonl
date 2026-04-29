@@ -1,0 +1,1 @@
+{"engine":"rust-polars","task":"groupby","repeat":5,"seconds":[0.48742878,0.45326933,0.460022288,0.464911329,0.455790068],"best_seconds":0.45326933,"rows":5000000,"n":null,"output_rows":300,"checksum":1443256177.7887874}

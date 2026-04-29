@@ -1,0 +1,1 @@
+{"engine":"rust-native","task":"numeric","repeat":5,"seconds":[2.628855755,2.649149293,2.6131036979999998,2.640913402,2.612735743],"best_seconds":2.612735743,"rows":null,"n":50000000,"output_rows":null,"checksum":103365.34054374312}
