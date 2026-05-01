@@ -75,10 +75,20 @@ bash scripts/run_all.sh
 Override benchmark sizes:
 
 ```bash
-N_NUMERIC=100000000 REPEAT=5 LOOP_REPEAT=3 CHUNK_ROWS=100000 bash scripts/run_all.sh
+N_NUMERIC=100000000 REPEAT=20 LOOP_REPEAT=20 CHUNK_ROWS=100000 bash scripts/run_all.sh
 ```
 
-Each benchmark writes JSON lines into `results/` and also prints one JSON object to stdout.
+Each benchmark writes JSON lines into `results/`, prints one JSON object to stdout, and appends one CSV row per individual timing run to `results/benchmark_runs.csv`.
+
+The default repeat count is 20 for all benchmark families. A full `scripts/run_all.sh` execution appends 20 rows per benchmark task per machine. For example, running the suite on 3 machines appends `20 x task_count x 3` rows.
+
+The CSV is intentionally tracked by git so benchmark results can be collected from multiple cloned machines and analyzed later. It includes run IDs, machine metadata (`hostname`, OS, CPU model/count, architecture), benchmark identifiers, per-run elapsed seconds, row counts, output counts, and checksums.
+
+To write to a different CSV path:
+
+```bash
+RESULTS_CSV=results/laptop_runs.csv bash scripts/run_all.sh
+```
 
 ## Benchmarks
 
